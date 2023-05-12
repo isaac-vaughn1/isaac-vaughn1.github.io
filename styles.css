@@ -1,3 +1,10 @@
 footer {
-    border-top: solid rgba(0,0,0,0.2) 1px;
+    border-top: solid rgba(255, 255, 255, 0.2) 1px;
+  }
+
+  @media (max-width: 575px) {
+    .txtShrink {
+      font-size: 1.4em; /* Font size for even smaller screens */
+
+    }
   }
