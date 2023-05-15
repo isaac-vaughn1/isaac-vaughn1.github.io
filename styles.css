@@ -1,40 +1,63 @@
 footer {
-    border-top: solid rgba(255, 255, 255, 0.2) 1px;
+  border-top: solid rgba(255, 255, 255, 0.2) 1px;
+}
+
+.welcome {
+  opacity: 0;
+  transform: translateY(50px); /* Start 50px below its original position */
+  animation: fadeUpIn 1s forwards;
+  scroll-margin-top: 20vh; /* Adjust the value as needed */
+  scroll-behavior: smooth;
+}
+
+.welcome.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.infoRow {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.infoTitle {
+  display: none;
+}
+
+/*via w3*/
+@keyframes fadeUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px below its original position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move element to its original position */
+  }
+}
+
+@media (max-width: 768px) {
+  /*phones*/
+  .txtShrink {
+    font-size: 2.5em;
   }
 
   .infoRow {
-    margin-top:10em; 
-    margin-bottom:10em;
+    display: none;
   }
 
   .infoTitle {
-    display:none;
+    display: block;
   }
 
-  @media (max-width: 768px) { /*phones*/
-    .txtShrink {
-      font-size: 2.5em;
-    }
-
-    .infoRow {
-      display:none;
-    }
-
-    .infoTitle {
-      display:block;
-    }
-
-    .col-6 {
-      width: auto;
-    }
+  .col-6 {
+    width: auto;
   }
+}
 
-  @media only screen and (min-width: 769px) and (max-width: 1024px) { /*tablets*/
-    .display-1 {
-      font-size: calc(1.625rem + 3vw);
-    }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /*tablets*/
+  .display-1 {
+    font-size: calc(1.625rem + 3vw);
   }
-
-  @media only screen and (min-width: 1025px) { /*desktops*/
-
-  }
+}
