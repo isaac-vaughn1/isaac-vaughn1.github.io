@@ -12,7 +12,7 @@
   <title>My Bio</title>
 </head>
 
-<body class="bg-black">
+<body id="top" class="bg-black">
   <!--Author: Isaac Vaughn-->
   <!--Title: Online Profile-->
   <!--Date: 5/16/23-->
@@ -44,17 +44,57 @@
     </div>
   </nav>
 
-  <!--Body Section-->
-  <p class=" mt-5 ms-5 px-3 pb-3 display-1 border border-5 rounded-bottom border-secondary text-light fw-medium lh-lg text-center"
+  <!--Top Section-->
+  <p class="mt-5 ms-5 px-3 pb-3 display-1 border border-5 rounded-bottom border-secondary text-light fw-medium lh-lg text-center"
     style="width:6em;">
     Welcome to My Bio
   </p>
 
-  <div class="bg-light d-flex align-items-center justify-content-center" style="height:6.5em; margin-top:15em;">
-    <p class="txtShrink text-black text-center fw-bolder display-3 pt-2">SUPER - INTERESTING - TEXT</p>
+  <!--Knowledge Section-->
+  <div class="bg-dark d-flex align-items-center justify-content-center" style="height:6.5em; margin-top:15em;">
+    <p class="txtShrink text-light text-center fw-bolder display-3 pt-2">KNOWLEDGE</p>
   </div>
 
+  <div class="container text-center">
+    <div class="row g-5">
 
+      <!--Row 1 -- Left Column-->
+      <div class="col-6 infoRow">
+        <div class="p-3 display-1 border border-5 rounded-bottom border-secondary text-light fw-medium lh-lg text-center text-light">HTML/CSS Certified</div>
+      </div>
+
+      <!--Right Column-->
+      <div class="col-6 d-flex align-items-center justify-content-center infoRow">
+        <div class="p-3 text-light">[TEXT GOES HERE]</div>
+      </div>
+
+      <!--Row 2 -- Left Column-->
+      <div class="col-6 d-flex align-items-center justify-content-center infoRow">
+        <div class="p-3 text-light">[TEXT GOES HERE]</div>
+      </div>
+
+      <!--Right Column-->
+      <div class="col-6 infoRow">
+        <div class="p-3 display-1 border border-5 rounded-bottom border-secondary text-light fw-medium lh-lg text-center text-light">C# Proficient</div>
+      </div>
+
+      <!--Row 3 -- Left Column-->
+      <div class="col-6 d-flex align-items-center justify-content-center infoRow">
+        <div class="p-3 display-1 border border-5 rounded-bottom border-secondary text-light fw-medium lh-lg text-center text-light">Pursuing CS Bachelor's</div>
+      </div>
+
+      <!--Right Column-->
+      <div class="col-6 d-flex align-items-center justify-content-center infoRow">
+        <div class="p-3 text-light">[TEXT GOES HERE]</div>
+      </div>
+
+    </div> <!--End of Grid-->
+  </div> <!--End of Grid Container-->
+
+  <!--About Section-->
+  <div class="bg-dark d-flex align-items-center justify-content-center" style="height:6.5em;">
+    <p class="txtShrink text-light text-center fw-bolder display-3 pt-2">ABOUT ME</p>
+  </div>
 
   <!--Footer-->
   <footer class="mt-1 mx-5 pt-1 text-center text-light">
@@ -62,6 +102,7 @@
         class="link-opacity-25-hover link-light text-decoration-none">isaac1vaughn@gmail.com</a></p>
   </footer>
 
+  <!--JavaScript Link-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>

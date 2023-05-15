@@ -2,9 +2,14 @@ footer {
     border-top: solid rgba(255, 255, 255, 0.2) 1px;
   }
 
+  .infoRow {
+    margin-top:10em; 
+    margin-bottom:10em;
+  }
+
   @media (max-width: 575px) {
     .txtShrink {
-      font-size: 1.4em; /* Font size for even smaller screens */
+      font-size: 2.5em; /* Font size for even smaller screens */
 
     }
   }
